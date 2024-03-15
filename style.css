@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+.main{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.nav{
+    height: 100px;
+    width: 100%;
+    background-color: white;
+    /* border-bottom: 2px solid #dadada; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4vw;
+}
+
+.nav-part2{
+    display: flex;
+    align-items: center;
+    gap: 4vw;
+}
+
+.nav h2{
+    font-size: 1.5vw;
+    font-weight: 700;
+}
+
+.nav h4{
+    font-size: 1.1vw;
+}
+
+.nav i{
+    font-weight: 800;
+    display: none;
+}
+
+.nav button{
+    font-size: 1vw;
+    padding: 0.7vw 1.4vw;
+    background-color: #F4872F;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.content{
+    height: calc(100% -  100px);
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.content-left{
+    height: 100%;
+    width: 55%;
+    padding: 5vw 4vw;
+}
+
+.content-left h1{
+    /* margin-top: 2vw; */
+    font-size: 5vw;
+    line-height: 4.4vw;
+}
+
+.content-left h1 span{
+    color: #F4872F
+}
+
+.content-left p{
+    font-size: 1.2vw;
+    font-weight: 600;
+    color: #666;
+    width: 80%;
+    margin-top: 1.5vw;
+    margin-bottom: 3vw;
+}
+
+.content-left button{
+    font-size: 1.2vw;
+    padding: 1.1vw 2.1vw;
+    background-color: #F4872F;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+.content-right{
+    height: 100%;
+    width: 45%;
+
+}
+
+.content-right img{
+    height: 100%;
+    width: 100%;
+}
+
+@media (max-width:600px) {
+    .nav{   
+        padding: 0 6vw;
+        height: 60px;
+    }
+
+    .nav h2{
+        font-size: 5.1vw;
+    }
+
+    .nav h4{
+        font-size: 4vw;
+        display: none;
+    }
+
+    .nav i{
+        display: block;
+        font-size: 4.5vw;
+    }
+
+    .nav button{
+        display: none;
+    }
+
+    .content{
+        height: calc(100% - 60px);
+        flex-direction: column;
+    }
+
+    .content-left{
+        width: 100%;
+        height: 45%;
+        padding: 4vw 6vw;
+    }
+
+    .content-left h1{
+        font-size: 10vw;
+        line-height: 11vw;
+    }
+
+    .content-left p{
+        font-size: 3vw;
+        width: 90%;
+        margin-top: 5vw;
+        margin-bottom: 4vw;
+    }
+
+    .content-left button{
+        padding: 3vw 6vw;
+        border-radius: 3px;
+        font-weight: 600;
+        font-size: 3.5vw;
+    }
+
+    .content-right{
+        width: 100%;
+        height: 55%;
+    }
+    .content-right img{
+        margin-top: 6.5vw;
+    }
+}
