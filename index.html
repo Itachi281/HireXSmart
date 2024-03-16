@@ -15,11 +15,11 @@
       <div class="nav">
         <h2>Logo</h2>
         <div class="nav-part2">
-          <h4>AnyQues</h4>
-          <h4>Employer</h4>
-          <h4>Candidate</h4>
-          <h4>Register</h4>
-          <button>Sign In</button>
+          <a href="anyques.html">AnyQues</a>
+          <a href="employer.html">Employer</a>
+          <a href="candidate.html">Candidate</a>
+          <a href="register.html">Register</a>
+          <button onclick="openPopup()">Sign In</button>
           <i class="ri-menu-3-fill"></i>
         </div>
       </div>
@@ -27,14 +27,46 @@
         <div class="content-left">
           <h1>Welcome to <span>hireXsmart!!</span></h1>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus enim fugiat blanditiis aliquam veritatis. Commodi minus officiis blanditiis atque eveniet suscipit quos libero alias tempora ut. Atque aspernatur saepe maxime? Officia reprehenderit in pariatur libero totam nemo quasi maiores qui.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus
+            enim fugiat blanditiis aliquam veritatis. Commodi minus officiis
+            blanditiis atque eveniet suscipit quos libero alias tempora ut.
+            Atque aspernatur saepe maxime? Officia reprehenderit in pariatur
+            libero totam nemo quasi maiores qui.
           </p>
           <button>Explore Now</button>
         </div>
         <div class="content-right">
-            <img src="images/WelcomeHire.png" alt="" />
+          <img src="images/WelcomeHire.png" alt="" />
+        </div>
+      </div>
+      <div class="why-us">
+        <h2>Why Ch<span>oo</span>se Us?</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam,
+          architecto quos voluptates totam laborum eaque assumenda mollitia
+          illum nesciunt autem placeat eveniet, iusto doloremque voluptatibus
+          asperiores voluptatum animi! Laboriosam et quae harum dolore
+          voluptatibus consequuntur dolorum unde quo iste mollitia praesentium
+          tempore aut alias explicabo velit, ullam eligendi! Consequuntur, vero.
+        </p>
+        <div class="why-us-images">
+          <img src="https://www.uds.in/webroot/media/whyudss/innovation-thumb-1193.png" alt="">
+          <img src="https://www.uds.in/webroot/media/whyudss/operating-excellence-thumb-1276.png" alt="">
+          <img src="https://www.uds.in/webroot/media/whyudss/stability-thumb-5898.png" alt="">
         </div>
       </div>
     </div>
+    <div class="popup-form" id="popupForm">
+      <div class="popup-content">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <h2>Sign In</h2>
+        <form>
+          <input type="text" placeholder="Username" required>
+          <input type="password" placeholder="Password" required>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
