@@ -116,7 +116,7 @@ body {
 }
 
 .why-us {
-  height: 100%;
+  height: 60%;
   width: 100%;
   background-color: #f9f9f9;
   padding: 5vw 4vw;
@@ -141,18 +141,131 @@ body {
   margin-top: 1.5vw;
 }
 
-.why-us-images {
-    display: flex;
-    align-items: center;
-    gap: 11vw;
+.whyusimages{
+  height: calc(100% - 100px);
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
 }
 
-.why-us-images img{
-  width: 300px; /* Adjust width as needed */
-  height: auto; /* Maintain aspect ratio */
-  padding: 1.1vw 2.1vw;
+.contactus{
+  height: 100%;
+  width: 100%;
+  background-color: #f9f9f9;
+  display: flex;
+  position: relative;
 }
-  
+
+.section-61 {
+  width: 100vw;
+  max-width: 100vw;
+  min-width: 100vw;
+  padding: 5.95vw 15vw 5.95vw 17.86vw;
+  display: flex;
+}
+.div-block-489 {
+  max-width: 25vw;
+  min-width: 25vw;
+  margin-right: 3.57vw;
+  position: relative;
+}
+.heading-141 {
+  color: #000;
+  letter-spacing: -.08929vw;
+  margin-top: 0;
+  margin-bottom: 0.6vw;
+  font-family: DM Sans, sans-serif;
+  font-size: 2.97619vw;
+  font-weight: 600;
+  line-height: 3.57143vw;
+}
+.paragraph-122 {
+  margin-bottom: 0;
+  font-family: DM Sans, sans-serif;
+  font-size: 1.25vw;
+  font-weight: 500;
+  line-height: 1.90476vw;
+}
+.faqc2 {
+  width: 35.7143vw;
+}
+
+.div-block-475.faqc11 {
+  width: auto;
+}
+
+.div-block-474 {
+  max-width: 30vw;
+  cursor: pointer;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0;
+  display: flex;
+  position: static;
+}
+
+.div-block-476 {
+  display: block;
+  overflow: hidden;
+}
+
+.div-block-474.faqc2 {
+  width: auto;
+  max-width: none;
+}
+
+.paragraph-117 {
+  margin-top: 0.6vw;
+  margin-bottom: 0;
+  font-family: DM Sans, sans-serif;
+  font-size: .83333vw;
+  font-weight: 500;
+  line-height: 1.30952vw;
+}
+
+.div-block-475.faqc11 {
+  width: auto;
+}
+.heading-136.faqc14 {
+  width: 30vw;
+}
+
+.image-260.faqc15 {
+  width: 1.78571vw;
+    height: 1.78571vw;
+    max-height: 1.78571vw;
+    max-width: 1.78571vw;
+    min-height: 1.78571vw;
+    min-width: 1.78571vw;
+    cursor: pointer;
+  position: static;
+  right: 1.19vw;
+}
+.div-block-475 {
+  cursor: pointer;
+  background-color: #f2f2f2;
+  border-radius: 25px;
+  margin-bottom: 0.8vw;
+  padding: 1.79vw;
+  position: relative;
+}
+.lottie-animation-10 {
+  max-height: none;
+  max-width: 17vw;
+  display: flex;
+  position: absolute;
+  top: -3vw;
+  bottom: auto;
+  left: -1.7vw;
+  right: 0%;
+  transform: rotate(10deg);
+}
+
+.bg-fixed {
+  background-attachment: fixed;
+}
+
 @media (max-width: 600px) {
   .nav {
     padding: 0 6vw;
@@ -163,7 +276,7 @@ body {
     font-size: 5.1vw;
   }
 
-  .nav h4 {
+  .nav a {
     font-size: 4vw;
     display: none;
   }

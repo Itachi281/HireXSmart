@@ -9,6 +9,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
     <div class="main">
@@ -22,6 +23,42 @@
           <button onclick="openPopup()">Sign In</button>
           <i class="ri-menu-3-fill"></i>
         </div>
+        <!-- component -->
+<div class="bg-blue-400 h-screen w-screen">
+  <div class="flex flex-col items-center flex-1 h-full justify-center px-4 sm:px-0">
+      <div class="flex rounded-lg shadow-lg w-full sm:w-3/4 lg:w-1/2 bg-white sm:mx-0" style="height: 500px">
+          <div class="flex flex-col w-full md:w-1/2 p-4">
+              <div class="flex flex-col flex-1 justify-center mb-8">
+                  <h1 class="text-4xl text-center font-thin">Welcome Back</h1>
+                  <div class="w-full mt-4">
+                      <form class="form-horizontal w-3/4 mx-auto" method="POST" action="#">
+                          <div class="flex flex-col mt-4">
+                              <input id="email" type="text" class="flex-grow h-8 px-2 border rounded border-grey-400" name="email" value="" placeholder="Email">
+                          </div>
+                          <div class="flex flex-col mt-4">
+                              <input id="password" type="password" class="flex-grow h-8 px-2 rounded border border-grey-400" name="password" required placeholder="Password">
+                          </div>
+                          <div class="flex items-center mt-4">
+                              <input type="checkbox" name="remember" id="remember" class="mr-2"> <label for="remember" class="text-sm text-grey-dark">Remember Me</label>
+                          </div>
+                          <div class="flex flex-col mt-8">
+                              <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white text-sm font-semibold py-2 px-4 rounded">
+                                  Login
+                              </button>
+                          </div>
+                      </form>
+                      <div class="text-center mt-4">
+                          <a class="no-underline hover:underline text-blue-dark text-xs" href="#">
+                              Forgot Your Password?
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="hidden md:block md:w-1/2 rounded-r-lg" style="background: url('https://images.unsplash.com/photo-1515965885361-f1e0095517ea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3300&q=80'); background-size: cover; background-position: center center;"></div>
+      </div>
+  </div>
+</div>
       </div>
       <div class="content">
         <div class="content-left">
@@ -49,24 +86,514 @@
           voluptatibus consequuntur dolorum unde quo iste mollitia praesentium
           tempore aut alias explicabo velit, ullam eligendi! Consequuntur, vero.
         </p>
-        <div class="why-us-images">
-          <img src="https://www.uds.in/webroot/media/whyudss/innovation-thumb-1193.png" alt="">
-          <img src="https://www.uds.in/webroot/media/whyudss/operating-excellence-thumb-1276.png" alt="">
-          <img src="https://www.uds.in/webroot/media/whyudss/stability-thumb-5898.png" alt="">
+      </div>
+      <div class="testimonial">
+        <section class="text-gray-600 body-font">
+          <div class="container px-5 py-24 mx-auto">
+            <h1
+              class="text-3xl font-medium title-font text-gray-900 mb-12 text-center"
+            >
+              Testimonials
+            </h1>
+            <div class="flex flex-wrap -m-4">
+              <div class="p-4 md:w-1/2 w-full">
+                <div class="h-full bg-gray-100 p-8 rounded">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    class="block w-5 h-5 text-gray-400 mb-4"
+                    viewBox="0 0 975.036 975.036"
+                  >
+                    <path
+                      d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"
+                    ></path>
+                  </svg>
+                  <p class="leading-relaxed mb-6">
+                    Synth chartreuse iPhone lomo cray raw denim brunch everyday
+                    carry neutra before they sold out fixie 90's microdosing.
+                    Tacos pinterest fanny pack venmo, post-ironic heirloom
+                    try-hard pabst authentic iceland.
+                  </p>
+                  <a class="inline-flex items-center">
+                    <img
+                      alt="testimonial"
+                      src="https://dummyimage.com/106x106"
+                      class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"
+                    />
+                    <span class="flex-grow flex flex-col pl-4">
+                      <span class="title-font font-medium text-gray-900"
+                        >Holden Caulfield</span
+                      >
+                      <span class="text-gray-500 text-sm">UI DEVELOPER</span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <div class="p-4 md:w-1/2 w-full">
+                <div class="h-full bg-gray-100 p-8 rounded">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    class="block w-5 h-5 text-gray-400 mb-4"
+                    viewBox="0 0 975.036 975.036"
+                  >
+                    <path
+                      d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"
+                    ></path>
+                  </svg>
+                  <p class="leading-relaxed mb-6">
+                    Synth chartreuse iPhone lomo cray raw denim brunch everyday
+                    carry neutra before they sold out fixie 90's microdosing.
+                    Tacos pinterest fanny pack venmo, post-ironic heirloom
+                    try-hard pabst authentic iceland.
+                  </p>
+                  <a class="inline-flex items-center">
+                    <img
+                      alt="testimonial"
+                      src="https://dummyimage.com/107x107"
+                      class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"
+                    />
+                    <span class="flex-grow flex flex-col pl-4">
+                      <span class="title-font font-medium text-gray-900"
+                        >Alper Kamu</span
+                      >
+                      <span class="text-gray-500 text-sm">DESIGNER</span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- <div class="contactus"> -->
+      <!-- </div> -->
+      <!-- <div class="about-us"> -->
+      <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-wrap w-full mb-20">
+            <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+              <h1
+                class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900"
+              >
+                About Us
+              </h1>
+              <div class="h-1 w-20 bg-yellow-500 rounded"></div>
+            </div>
+            <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">
+              Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
+              gentrify, subway tile poke farm-to-table. Franzen you probably
+              haven't heard of them man bun deep jianbing selfies heirloom prism
+              food truck ugh squid celiac humblebrag.
+            </p>
+          </div>
+          <div class="flex flex-wrap -m-4">
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg">
+                <img
+                  class="h-40 rounded w-full object-cover object-center mb-6"
+                  src="images/why-choose1.png"
+                  alt="content"
+                />
+                <h3
+                  class="tracking-widest text-yellow-500 text-xs font-medium title-font"
+                >
+                  SUBTITLE
+                </h3>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
+                  Chichen Itza
+                </h2>
+                <p class="leading-relaxed text-base">
+                  Fingerstache flexitarian street art 8-bit waistcoat.
+                  Distillery hexagon disrupt edison bulbche.
+                </p>
+              </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg">
+                <img
+                  class="h-40 rounded w-full object-cover object-center mb-6"
+                  src="images/why-choose2.png"
+                  alt="content"
+                />
+                <h3
+                  class="tracking-widest text-yellow-500 text-xs font-medium title-font"
+                >
+                  SUBTITLE
+                </h3>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
+                  Colosseum Roma
+                </h2>
+                <p class="leading-relaxed text-base">
+                  Fingerstache flexitarian street art 8-bit waistcoat.
+                  Distillery hexagon disrupt edison bulbche.
+                </p>
+              </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg">
+                <img
+                  class="h-40 rounded w-full object-cover object-center mb-6"
+                  src="images/why-choose5.png"
+                  alt="content"
+                />
+                <h3
+                  class="tracking-widest text-yellow-500 text-xs font-medium title-font"
+                >
+                  SUBTITLE
+                </h3>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
+                  Great Pyramid of Giza
+                </h2>
+                <p class="leading-relaxed text-base">
+                  Fingerstache flexitarian street art 8-bit waistcoat.
+                  Distillery hexagon disrupt edison bulbche.
+                </p>
+              </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg">
+                <img
+                  class="h-40 rounded w-full object-cover object-center mb-6"
+                  src="images/why-choose4.png"
+                  alt="content"
+                />
+                <h3
+                  class="tracking-widest text-yellow-500 text-xs font-medium title-font"
+                >
+                  SUBTITLE
+                </h3>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
+                  San Francisco
+                </h2>
+                <p class="leading-relaxed text-base">
+                  Fingerstache flexitarian street art 8-bit waistcoat.
+                  Distillery hexagon disrupt edison bulbche.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
+      <section class="text-gray-600 body-font relative">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-col text-center w-full mb-12">
+            <h1
+              class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900"
+            >
+              Contact Us
+            </h1>
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
+              Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
+              gentrify.
+            </p>
+          </div>
+          <div class="lg:w-1/2 md:w-2/3 mx-auto">
+            <div class="flex flex-wrap -m-2">
+              <div class="p-2 w-1/2">
+                <div class="relative">
+                  <label for="name" class="leading-7 text-sm text-gray-600"
+                    >Name</label
+                  >
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  />
+                </div>
+              </div>
+              <div class="p-2 w-1/2">
+                <div class="relative">
+                  <label for="email" class="leading-7 text-sm text-gray-600"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  />
+                </div>
+              </div>
+              <div class="p-2 w-full">
+                <div class="relative">
+                  <label for="message" class="leading-7 text-sm text-gray-600"
+                    >Message</label
+                  >
+                  <textarea
+                    id="message"
+                    name="message"
+                    class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="p-2 w-full">
+                <button
+                  class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+                >
+                  Button
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- </div> -->
+      <section class="section-61 faqc1">
+        <div class="div-block-489 faqc2">
+          <h2 class="heading-141 faqc3">Frequently Asked Questions</h2>
+          <p class="paragraph-122 faqc4">
+            If you have any more questions, feel free to reach out to us at
+            support@hireXsmart
+          </p>
+          <div
+            class="lottie-animation-10"
+            data-w-id="97ba11c9-ad75-687e-9fe0-ca3641c4a6e1"
+            data-animation-type="lottie"
+            data-src="https://assets-global.website-files.com/60d19df3e49f1bce12e33927/64e4abda8b5c34f922ecd803_Circle%20scribble%20light%20green.json"
+            data-loop="0"
+            data-direction="1"
+            data-autoplay="1"
+            data-is-ix2-target="0"
+            data-renderer="svg"
+            data-default-duration="0.5333333333333333"
+            data-duration="0"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 0 1920 1080"
+              width="1920"
+              height="1080"
+              preserveAspectRatio="xMidYMid meet"
+              style="
+                width: 100%;
+                height: 100%;
+                transform: translate3d(0px, 0px, 0px);
+                content-visibility: visible;
+              "
+            >
+              <defs>
+                <clipPath id="__lottie_element_92">
+                  <rect width="1920" height="1080" x="0" y="0"></rect>
+                </clipPath>
+              </defs>
+              <g clip-path="url(#__lottie_element_92)">
+                <g
+                  transform="matrix(1,0,0,1,0,0)"
+                  opacity="1"
+                  style="display: block"
+                >
+                  <g
+                    opacity="1"
+                    transform="matrix(1,0,0,1,951.7100219726562,548.5590209960938)"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      fill-opacity="0"
+                      stroke="rgb(212,249,102)"
+                      stroke-opacity="1"
+                      stroke-width="35"
+                      d=" M452.79998779296875,-375.04998779296875 C148.10000610351562,-496.54998779296875 -391.1000061035156,-394.04998779296875 -650.2999877929688,-214.85000610351562 C-768.4000244140625,-133.25 -976.7000122070312,84.75 -810,240.14999389648438 C-780.5999755859375,267.54998779296875 -746.5999755859375,288.45001220703125 -712,305.75 C-331.20001220703125,496.54998779296875 150.39999389648438,404.95001220703125 503.70001220703125,210.25 C556.4000244140625,181.25 607.5999755859375,148.25 653.2999877929688,106.8499984741211 C687.4000244140625,75.8499984741211 719.4000244140625,38.95000076293945 743.5999755859375,-2.3499999046325684 C814.4000244140625,-123.25 776.7000122070312,-229.85000610351562 671.5,-309.45001220703125 C549.5,-401.75 398.3999938964844,-414.6499938964844 257.6000061035156,-413.6499938964844 C134.5,-412.75 13.300000190734863,-399.04998779296875 -107.19999694824219,-375.75 C-333.29998779296875,-331.95001220703125 -593.2000122070312,-276.25 -763.9000244140625,-103.25 C-838.5999755859375,-27.549999237060547 -909.2999877929688,121.55000305175781 -822.4000244140625,222.25 C-728.2999877929688,331.45001220703125 -540.0999755859375,344.95001220703125 -413.70001220703125,353.1499938964844 C-72.5999984741211,375.45001220703125 447.5,268.8500061035156 724.7000122070312,47.849998474121094 C754.5999755859375,24.049999237060547 785.0999755859375,1.4500000476837158 810.7000122070312,-27.950000762939453 C830.9000244140625,-51.25 849.7999877929688,-77.1500015258789 865.5,-104.55000305175781 C976.7000122070312,-298.8500061035156 659,-367.25 549.7000122070312,-371.45001220703125 C205.89999389648438,-384.6499938964844 -302.6000061035156,-401.75 -589.5999755859375,-200.35000610351562"
+                    ></path>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </div>
+        </div>
+        <div class="faqc2">
+          <div class="div-block-475 faqc11">
+            <div
+              data-w-id="c55b4c9e-0eb7-b9b9-cb02-60b1be3cd29c"
+              class="div-block-474 faqc2"
+            >
+              <h3 class="heading-136 faqc14">What is Click heatmap?</h3>
+              <img
+                src="https://assets-global.website-files.com/60d19df3e49f1bce12e33927/64be9a958a5d3a1d47e6d1a1_Group%20386.webp"
+                loading="lazy"
+                alt=""
+                class="image-260 faqc15"
+              />
+            </div>
+            <div class="div-block-476 faqc13" style="height: 0px">
+              <p class="paragraph-117 faqc16">
+                Zipy.ai's comprehensive heatmap software provides intuitive
+                heatmap analysis to understand user interactions better. Our
+                heatmap software showcases clickmaps, scrollmaps, identifying
+                areas of rage clicks and dead clicks, aiding in enhancing the
+                user experience. With Zipy.ai, unravel the story your data tells
+                through our robust heatmap analysis, making the digital
+                experience seamless and user-centric.
+              </p>
+            </div>
+          </div>
+          <div class="div-block-475 faqc11">
+            <div
+              data-w-id="84add116-aa34-dcfb-78cd-458dffe266e4"
+              class="div-block-474 faqc2"
+            >
+              <h3 class="heading-136 faqc14">
+                What is heatmap in website or application?
+              </h3>
+              <img
+                src="https://assets-global.website-files.com/60d19df3e49f1bce12e33927/64be9a958a5d3a1d47e6d1a1_Group%20386.webp"
+                loading="lazy"
+                alt=""
+                class="image-260 faqc15"
+              />
+            </div>
+            <div class="div-block-476 faqc13" style="height: 0px">
+              <p class="paragraph-117 faqc16">
+                A heatmap in a website or application is a visual representation
+                that illustrates how users interact with the platform. Using
+                heatmap software like zipy.ai, one can conduct heatmap analysis
+                to identify areas receiving more engagement through color
+                variations. This heatmap software provides insights into user
+                behavior by displaying clickmaps, which record where users
+                click, and scrollmaps, indicating scrolling behavior.
+                Additionally, it identifies rage clicks and dead clicks to
+                highlight potential issues. Rage clicks occur when a user
+                repeatedly clicks an unresponsive element, while dead clicks
+                refer to clicks on elements that do not lead to any interaction,
+                helping in optimizing the user interface for a better digital
+                experience.
+              </p>
+            </div>
+          </div>
+          <div class="div-block-475 faqc11">
+            <div
+              data-w-id="d5c9c19e-7299-1704-9348-f4e4f11c7609"
+              class="div-block-474 faqc2"
+            >
+              <h3 class="heading-136 faqc14">What are heatmap tools?</h3>
+              <img
+                src="https://assets-global.website-files.com/60d19df3e49f1bce12e33927/64be9a958a5d3a1d47e6d1a1_Group%20386.webp"
+                loading="lazy"
+                alt=""
+                class="image-260 faqc15"
+              />
+            </div>
+            <div class="div-block-476 faqc13" style="height: 0px">
+              <p class="paragraph-117 faqc16">
+                Heatmap tools are graphical representations of data where values
+                are depicted by varying shades or colors. In Zipy.ai, heatmap
+                tools like clickmaps and scrollmaps provide insightful
+                visualizations of user interactions on a webpage. They capture
+                where users click (clickmap), how they scroll (scrollmap),
+                instances of rapid clicking out of frustration (rage click), or
+                clicks on inactive elements (dead click). By analyzing this
+                heatmap data, Zipy's heatmap software aids in identifying
+                usability issues, improving user experience, and ultimately,
+                enhancing the overall digital experience. Through heatmap
+                analysis, businesses can make data-driven decisions to optimize
+                their website's performance.
+              </p>
+            </div>
+          </div>
+          <div class="div-block-475 faqc11">
+            <div
+              data-w-id="b81f778d-3df5-7c88-e5bf-f662d0551fbc"
+              class="div-block-474 faqc2"
+            >
+              <h3 class="heading-136 faqc14">How is Zipy heatmap useful?</h3>
+              <img
+                src="https://assets-global.website-files.com/60d19df3e49f1bce12e33927/64be9a958a5d3a1d47e6d1a1_Group%20386.webp"
+                loading="lazy"
+                alt=""
+                class="image-260 faqc15"
+              />
+            </div>
+            <div class="div-block-476 faqc13" style="height: 0px">
+              <p class="paragraph-117 faqc16">
+                The Zipy heatmap software is an invaluable asset for
+                understanding user interaction on your website. By offering
+                heatmap analysis, it visually represents areas where users
+                click, scroll, or even exhibit rage or dead clicks. This heatmap
+                software allows for an in-depth examination of user behavior,
+                aiding in identifying both successful and problematic areas of
+                your webpage. The clickmap and scrollmap features specifically
+                help in understanding user navigation and engagement.
+                Integrating Zipy's heatmap tool is a step towards optimizing
+                user experience, ensuring that your site not only meets but
+                exceeds user expectations. By leveraging the insights from
+                Zipy.ai's heatmap analysis, you're better positioned to make
+                data-driven decisions for website improvements.
+              </p>
+            </div>
+          </div>
+          <div class="div-block-475 faqc11">
+            <div
+              data-w-id="5d2bc13d-bd50-bcdf-3a48-e58f17b8aad4"
+              class="div-block-474 faqc2"
+            >
+              <h3 class="heading-136 faqc14">
+                How can I track rage clicks and dead clicks in Zipy?
+              </h3>
+              <img
+                src="https://assets-global.website-files.com/60d19df3e49f1bce12e33927/64be9a958a5d3a1d47e6d1a1_Group%20386.webp"
+                loading="lazy"
+                alt=""
+                class="image-260 faqc15"
+              />
+            </div>
+            <div class="div-block-476 faqc13" style="height: 0px">
+              <p class="paragraph-117 faqc16">
+                In Zipy, tracking rage clicks and dead clicks is simplified
+                through its robust heatmap tool. This feature facilitates
+                heatmap analysis, allowing you to visually identify areas on
+                your webpage where users experience frustration or encounter
+                issues. With the heatmap software, you can observe patterns in
+                click behavior through a clickmap, revealing rage clicks and
+                dead clicks. Additionally, a scrollmap helps in understanding
+                user interaction and scrolling behavior on your page. Harnessing
+                these insights from Zipy.ai not only aids in optimizing user
+                experience but also in identifying and rectifying problem areas
+                on your website.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="text-gray-600 body-font">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+          <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-yellow-500 rounded-full" viewBox="0 0 24 24">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+            <span class="ml-3 text-xl">HireXSmart</span>
+          </a>
+          <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2024 HireXSmart —
+            <a href="https://twitter.com/knyttneve" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">@hireXsmart</a>
+          </p>
+          <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+            <a class="text-gray-500">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                <circle cx="4" cy="4" r="2" stroke="none"></circle>
+              </svg>
+            </a>
+          </span>
+        </div>
+      </footer>
     </div>
-    <div class="popup-form" id="popupForm">
-      <div class="popup-content">
-        <span class="close" onclick="closePopup()">&times;</span>
-        <h2>Sign In</h2>
-        <form>
-          <input type="text" placeholder="Username" required>
-          <input type="password" placeholder="Password" required>
-          <button type="submit">Submit</button>
-        </form>
-      </div>
-    </div>
-    <script src="script.js"></script>
   </body>
 </html>
