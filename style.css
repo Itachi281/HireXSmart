@@ -266,6 +266,15 @@ body {
   background-attachment: fixed;
 }
 
+.bd-cover{
+  background-size: cover;
+}
+
+.hide {
+  display: none;
+}
+
+
 @media (max-width: 600px) {
   .nav {
     padding: 0 6vw;
@@ -345,3 +354,16 @@ body {
     margin-bottom: 4vw;
   }
 }
+
+.reveal{
+  position: relative;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal.active{
+  transform: translateY(0px);
+  opacity: 1;
+}
+
