@@ -21,6 +21,17 @@ function reveal() {
   }
 }
 
+window.addEventListener("load", () => {
+  // Hide loading screen and show content when page has finished loading.
+  const loader = document.querySelector(".loader");
+
+  loader.classList.add("loader-hidden");
+
+  loader.addEventListener("transitionend", () => {
+    document.body.removeChild("loader");
+  })
+})
+
 const container = document.getElementById('container');
         const overlaycon = document.getElementById('overlayCon');
         const overlaybtn = document.getElementById('overlayBtn');
